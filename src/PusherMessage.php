@@ -130,6 +130,7 @@ class PusherMessage
      *
      * @param \NotificationChannels\PusherPushNotifications\PusherMessage $message
      * @return $this
+     * @throws CouldNotCreateMessage
      */
     public function withAndroid(PusherMessage $message)
     {
@@ -143,6 +144,7 @@ class PusherMessage
      *
      * @param \NotificationChannels\PusherPushNotifications\PusherMessage $message
      * @return $this
+     * @throws CouldNotCreateMessage
      */
     public function withiOS(PusherMessage $message)
     {
@@ -156,6 +158,7 @@ class PusherMessage
      *
      * @param \NotificationChannels\PusherPushNotifications\PusherMessage $message
      * @return void
+     * @throws CouldNotCreateMessage
      */
     private function withExtra(PusherMessage $message)
     {
